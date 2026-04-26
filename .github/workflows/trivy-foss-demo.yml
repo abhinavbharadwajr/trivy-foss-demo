@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build Docker image
-        run: docker build -t app:latest ./trivy-foss-demo
+        run: docker build -t app:latest .
 
       - name: Run Trivy scan
         uses: aquasecurity/trivy-action@master
